@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.active {
+    font-weight: 800;
+}
+
+.container {
+    width: calc(100% - 120px);
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*------------------------------------Header section------------------------------------*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    background-color: #FFF;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header .logo a {
+    color: #545be8;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header nav ul li a {
+    color: #101928;
+}
+
+header .auth {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header .auth a,
+.register {
+    padding: 5px 30px;
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+header .auth .login {
+    color: #545be8;
+    border: 2px solid #545be8;
+}
+
+header .auth .register,
+.register {
+    color: white;
+    background-color: #545be8;
+}
+
+/* -------------- end of Header section -------------- */
+/*  --------------------------------    Introduction Section  ------------------------------- */
+.intro {
+    padding: 40px 0;
+    background-color: #F5F5F5;
+}
+
+.intro .row {
+    gap: 20px;
+}
+
+.intro .intro-details {
+    width: calc((100% - 20px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro .intro-details .header .main-span {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #545BE8;
+    text-transform: capitalize;
+}
+
+.intro .intro-details .header .bold {
+    font-weight: 900;
+}
+
+.intro .intro-details h1 {
+    color: #141E32;
+    font-weight: 900;
+    font-size: 64px;
+    text-transform: capitalize;
+}
+
+.intro .intro-details h1 .maincol {
+    color: #545BE8;
+}
+
+.intro .intro-details p {
+    color: #969696;
+}
+
+.intro .intro-details .intro-links,
+.intro .intro-details .intro-links .vid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .intro-details .intro-links {
+    gap: 60px;
+    text-transform: capitalize;
+}
+
+.intro .intro-end {
+    width: calc((100% - 20px) / 2);
+}
+
+.intro .intro-end img {
+    display: block;
+    width: 85%;
+    height: 85%;
+}
+
+/* -------------- end of Introduction section -------------- */
+/*  --------------------------------    System Section  ------------------------------- */
+.system {
+    padding: 60px 0;
+}
+
+.system .row {
+    gap: 20px;
+}
+
+.system-intro {
+    width: calc((120% - 20px) / 4);
+}
+
+.system-intro span {
+    color: #545BE8;
+    text-transform: uppercase;
+}
+
+.system-intro h2 {
+    color: #141E32;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.system-intro p {
+    color: #969696;
+    font-size: 18px;
+}
+
+.system-cards {
+    width: calc((275% - 20px) / 4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 5px;
+    color: #DDDDDD;
+}
+
+.system-cards .card {
+    width: calc((100% - 10px) / 3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px 0;
+    background-color: #545BE8;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.system-cards .card h3 {
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+.system-cards .card .card-tag {
+    background-color: #DDDDDD;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.system-cards .card .card-tag img {
+    display: block;
+}
+
+.card p {
+    font-size: 14px;
+    ;
+}
+
+/* -------------- end of System section -------------- */
+
+/*  --------------------------------    Statistics Section  ------------------------------- */
+.statistics {
+    background-image: linear-gradient(#272DB0, #545BE8);
+    padding: 40px 0;
+    align-self: flex-end;
+}
+
+.statistics .row {
+    gap: 0 20px;
+}
+
+.statistics .stat-start {
+    width: calc((100% - 20px) /2);
+}
+
+.statistics .stat-start img {
+    width: 500px;
+    display: block;
+}
+
+.statistics .stat-end {
+    width: calc((100% - 20px) / 2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.statistics .stat-end .slctd-course {
+    color: #F0C932;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.statistics .stat-end h2 {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 40px;
+
+}
+
+.statistics .stat-end p {
+    color: #DDDDDD;
+    font-size: 18px;
+}
+.statistics .stat-end .stat-numbers .row{
+justify-content: space-around;
+}
+.statistics .stat-count{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+gap: 0 10px ;
+text-align: center;
+}
+.statistics .stat-count .count{
+    color: #F0C932;
+}
+.statistics .stat-count .count-detail{
+    color: #DDDDDD;
+    font-family: "Inter", sans-serif;
+}
+/* -------------- end of Statistics section -------------- */
+/*  --------------------------------    courses Section  ------------------------------- */
+.courses .row {
+    gap: 30px;
+}
+
+.courses {
+    padding: 40px 0;
+}
+
+.course-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: calc((160% - 30px) / 3);
+    padding: 10px;
+}
+
+.course {
+    width: calc((100% - 30px) / 2);
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.course-card {
+    position: relative;
+}
+
+.course img {
+    width: 100%;
+    aspect-ratio: 135.09/99.08;
+    display: flex;
+    filter: brightness(90%);
+}
+
+.course-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    padding: 10px 10px 10px 0;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.course-info span:nth-child(1) {
+    background-color: #545be8;
+    align-self: flex-start;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.course-info span:nth-child(2) {
+    align-self: flex-end;
+}
+
+.course-details {
+    padding: 10px;
+}
+
+.course-details h2 {
+    font-size: 17px;
+    color: #141E32;
+}
+
+.course-details span {
+    font-size: 10px;
+}
+
+.course-details .views {
+    color: #545BE8;
+}
+
+.course-details .row:last-of-type {
+    justify-content: start;
+    gap: 10px;
+    color: #969696;
+}
+
+.course-desc {
+    width: calc((100% - 30px) / 3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-desc p:nth-child(1) {
+    color: #545BE8;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.course-desc h2 {
+    text-transform: capitalize;
+    color: #141E32;
+    font-weight: 900;
+}
+
+.course-desc .descp {
+    color: #969696;
+}
+
+.course-desc a {
+    background-color: #545BE8;
+    padding: 5px 20px;
+    border-radius: 5px;
+    align-self: start;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "inter", sans-serif;
+}
+
+/* ------------courses section done ------------*/
+/* -------------------------------Testimonials------------------------- */
+.testimonial {
+    padding: 40px 0;
+}
+
+.testimonial h2 {
+    text-align: center;
+    font-family: "Mada";
+}
+
+.testim {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    position: relative;
+}
+
+.testim::after {
+    content: '';
+    border-top: 50px solid #f1eded;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.testimonial .row {
+    gap: 15px;
+}
+
+.testimonial h2 {
+    margin-bottom: 20px;
+}
+
+.testim {
+    width: calc((100% - 15px) / 2);
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.testim .user-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.testim .user-info span {
+    color: #969696;
+    font-size: 12px;
+}
+
+.testim .user-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+    /*since images have 4px margin beneath them*/
+}
+
+.testim .user-info .user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.testim .user-info .user-data h3 {
+    text-transform: capitalize;
+}
+
+/*------------------------------------footer section------------------------------------*/
+footer {
+    background-color: #393E46;
+    padding: 50px 0;
+    color: #F4F4F4;
+}
+
+footer .row {
+    gap: 40px;
+}
+
+footer a {
+    color: #F4F4F4;
+}
+
+footer .socials,
+footer .lists {
+    width: calc((100% - 40px) / 2);
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+footer .logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+footer img {
+    width: 35px;
+}
+
+footer .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+footer .icons svg {
+    border: solid white 1px;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+.lists h2 {
+    font-size: 18px;
+}
+
+.footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-item nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* -------------- end of footer section -------------- */
